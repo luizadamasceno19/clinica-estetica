@@ -19,7 +19,7 @@ const Search = () => {
     const matchesDoctor = !searchDoctor || 
       appointment.doctorName.toLowerCase().includes(searchDoctor.toLowerCase());
     
-    const matchesSpecialty = !searchSpecialty || 
+    const matchesSpecialty = !searchSpecialty || searchSpecialty === 'all' ||
       appointment.specialty === searchSpecialty;
     
     const matchesDate = !searchDate || 
@@ -86,7 +86,7 @@ const Search = () => {
                 <SelectValue placeholder="Selecione a especialidade" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Todas as especialidades</SelectItem>
+                <SelectItem value="all">Todas as especialidades</SelectItem>
                 {specialties.map((specialty) => (
                   <SelectItem key={specialty} value={specialty}>
                     {specialty}
