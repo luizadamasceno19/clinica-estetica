@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# 💆‍♀️ Sistema para Clínica de Estética
 
-## Project info
+Este sistema tem como objetivo facilitar o gerenciamento de médicos, pacientes e consultas de uma clínica de estética, oferecendo controle completo da agenda e geração de relatórios detalhados.
 
-**URL**: https://lovable.dev/projects/552f52e1-3f99-4c02-93a0-91900747b2e0
+## 📌 Objetivo
 
-## How can I edit this code?
+Desenvolver um sistema que permita o cadastro e gerenciamento eficiente de:
 
-There are several ways of editing your application.
+* Médicos
+* Pacientes
+* Consultas
+* Relatórios de agendamento
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/552f52e1-3f99-4c02-93a0-91900747b2e0) and start prompting.
+## ✅ Funcionalidades
 
-Changes made via Lovable will be committed automatically to this repo.
+### 1. 🩺 Cadastro de Médicos
 
-**Use your preferred IDE**
+Permite cadastrar médicos com as seguintes informações:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* Código do médico
+* Nome completo
+* Especialidade
+* E-mail
+* Telefone
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+### 2. 📅 Gerenciamento de Consultas
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Funcionalidade para criar e gerenciar a agenda da clínica:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* Data da consulta
+* Nome do paciente
+* Nome do médico
+* Especialidade do médico
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 3. 🧑‍💼 Gerenciamento de Pacientes
 
-**Edit a file directly in GitHub**
+Cadastro completo de pacientes com os seguintes dados:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+* Nome
+* E-mail
+* Telefone
+* Data de nascimento
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 4. 🔍 Pesquisa de Consultas
 
-## What technologies are used for this project?
+Pesquisa de agendamentos por:
 
-This project is built with:
+* Nome do médico
+* Especialidade
+* Data da consulta
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+### 5. 📊 Relatórios
 
-Simply open [Lovable](https://lovable.dev/projects/552f52e1-3f99-4c02-93a0-91900747b2e0) and click on Share -> Publish.
+Geração de relatórios personalizados:
 
-## Can I connect a custom domain to my Lovable project?
+* Agenda por médico
+* Agenda por especialidade
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
