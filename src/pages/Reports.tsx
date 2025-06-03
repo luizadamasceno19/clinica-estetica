@@ -68,7 +68,7 @@ const Reports = () => {
         : ['Especialidade', 'Total', 'Concluídas', 'Agendadas', 'Canceladas'],
       ...data.map(item => 
         reportType === 'doctor' 
-          ? [item.doctorName, item.specialty, item.total, item.completed, item.scheduled, item.cancelled]
+          ? [(item as any).doctorName, item.specialty, item.total, item.completed, item.scheduled, item.cancelled]
           : [item.specialty, item.total, item.completed, item.scheduled, item.cancelled]
       )
     ].map(row => row.join(',')).join('\n');
@@ -252,7 +252,7 @@ const Reports = () => {
                 {currentData.map((item, index) => (
                   <tr key={index} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="p-4 font-medium text-gray-900">
-                      {reportType === 'doctor' ? item.doctorName : item.specialty}
+                      {reportType === 'doctor' ? (item as any).doctorName : item.specialty}
                     </td>
                     {reportType === 'doctor' && (
                       <td className="p-4 text-blue-600">{item.specialty}</td>
@@ -270,7 +270,7 @@ const Reports = () => {
             </table>
           </div>
         </CardContent>
-      </Card>
+      </div>
     </div>
   );
 };
