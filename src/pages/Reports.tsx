@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useApp } from '@/contexts/AppContext';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -270,7 +269,7 @@ const Reports = () => {
             </table>
           </div>
         </CardContent>
-      </div>
+      </Card>
     </div>
   );
 };
